@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ANIMATION</title>
+    <STYLE>
+        body{
+            font-family: arial,helvetica;
+            background:greenyellow;
+        }
+        .card{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            line-height: 300px;
+            margin: -150px;
+            background: white;
+            color: aqua;
+            text-align: center;
+            font-size: 40px;
+            box-shadow: 0 15px rgba(0,0,0,0,0.1);
+           /* animation-name: sample;
+            animation-duration: 2s;
+            animation-timing-function:cubic-bezier(0.1,0.4,1,0.1);
+             it have more than one value 1.ease2.linear3.ease-in4.ease-out5.ease-in-out6.step-start7.step-end8.steps9.cubic-bezier (0.1,.0.4,0.5,0.1) 
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+             animation-direction: alternate; this proeprty had four option 1.normal 2.Reverse 3. Alternate 4.Alternate-reverse */
+             animation: sample 2s cubic-bezier(0.1,0.4,1,0.1) 1s infinite alternate;
+            /* animation: sample 2s cubic-bezier(0.1,0.4,1,0.1) 1s infinite alternate; it is the shorthand of the above four type property  */
+        }
+        @keyframes sample{
+            0%{border-radius: 0%;}
+            /*from{border-radius: 0%;}  we can use the 0% value instead of from  */
+            25%{background-color:yellow;}
+            50%{background-color:green;}
+            100%{border-radius: 50%; background-color: tomato; color: blue;}
+            /*to{border-radius: 50%;}  we can use the 100% value instead of to  */
+        }
+    </STYLE>
+</head>
+<body>
+    <h1 style="margin-bottom:50px ;">CSS ANIMATION</h1>
+    <div class="card">Rakesh sukhen</div>
+</body>
+</html>
